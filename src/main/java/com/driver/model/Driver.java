@@ -16,11 +16,11 @@ public class Driver{
 
     String password;
 
-    //For mapping to tripBooking(Child)
+    //For mapping to tripBooking(Child)...
     @OneToMany(mappedBy = "driver", cascade = CascadeType.ALL)
     List<TripBooking> tripBookingList = new ArrayList<>();
 
-    //For mapping to Cab(Parent)
+    //For mapping to Cab(Parent) .
     @OneToOne(mappedBy = "driver", cascade = CascadeType.ALL)
     Cab cab;
 

@@ -18,7 +18,7 @@ public class Cab{
     boolean available;
 
 
-    //For mapping
+    //For mapping with parent class
     @OneToOne
     @JoinColumn
     Driver driver;

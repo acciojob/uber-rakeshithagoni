@@ -16,7 +16,7 @@ public class Customer{
 
     String password;
 
-    //For Mapping
+    //For Mapping by the child class variable
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     List<TripBooking> tripBookingList = new ArrayList<>();
 
